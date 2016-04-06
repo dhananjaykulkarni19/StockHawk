@@ -8,6 +8,15 @@ public class StocksModel {
     String symbol;
     String bidPrice;
     String percentChange;
+    String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getSymbol() {
         return symbol;

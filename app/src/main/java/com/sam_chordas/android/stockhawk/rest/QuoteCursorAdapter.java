@@ -50,11 +50,12 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
   public void onBindViewHolder(final ViewHolder viewHolder, final Cursor cursor){
 
     String bidPrice = cursor.getString(cursor.getColumnIndex("bid_price"));
+    String name = cursor.getString(cursor.getColumnIndex("name"));
 
-    /*if(bidPrice.equalsIgnoreCase("")){
-      Toast.makeText(mContext, "This stock does not exist", Toast.LENGTH_SHORT).show();
-    }else{*/
+    viewHolder.symbol.setContentDescription(name);
+
       viewHolder.symbol.setText(cursor.getString(cursor.getColumnIndex("symbol")));
+
       viewHolder.bidPrice.setText(cursor.getString(cursor.getColumnIndex("bid_price")));
       int sdk = Build.VERSION.SDK_INT;
       if (cursor.getInt(cursor.getColumnIndex("is_up")) == 1){
@@ -79,7 +80,6 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
       } else{
         viewHolder.change.setText(cursor.getString(cursor.getColumnIndex("change")));
       }
-    //}
   }
 
   @Override public void onItemDismiss(int position) {

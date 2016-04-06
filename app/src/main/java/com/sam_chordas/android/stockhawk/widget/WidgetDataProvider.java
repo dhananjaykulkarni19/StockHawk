@@ -58,6 +58,8 @@ public class WidgetDataProvider implements QuoteWidgetRemoteViewsService.RemoteV
 
         RemoteViews view = new RemoteViews(mContext.getPackageName(), R.layout.widget_collection_item);
 
+        view.setContentDescription(R.id.stock_symbol, arrayList.get(position).getName());
+
         view.setTextViewText(R.id.stock_symbol, arrayList.get(position).getSymbol());
         view.setTextViewText(R.id.stock_bid_price, arrayList.get(position).getBidPrice());
         view.setTextViewText(R.id.change, arrayList.get(position).getPercentChange());
@@ -97,6 +99,7 @@ public class WidgetDataProvider implements QuoteWidgetRemoteViewsService.RemoteV
                 model.setSymbol(cursor.getString(cursor.getColumnIndex("symbol")));
                 model.setBidPrice(cursor.getString(cursor.getColumnIndex("bid_price")));
                 model.setPercentChange(cursor.getString(cursor.getColumnIndex("percent_change")));
+                model.setName(cursor.getString(cursor.getColumnIndex("name")));
 
                 list.add(model);
 

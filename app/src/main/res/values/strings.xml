@@ -1,26 +1,25 @@
 <resources>
-    <string name="app_name">Stock Hawk</string>
+    <string name="app_name" translatable="false">Stock Hawk</string>
 
     <string name="action_example">Example action</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="action_change_units">Change Units</string>
-    <string name="symbol_search">Symbol Search</string>
-    <string name="content_test">Search for a Stock Symbol</string>
-    <string name="input_hint">FB</string>
-    <string name="input_prefill"></string>
-    <string name="widget_title">Today\'s Market</string>
-    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
-    <string name="add_stock">Add a stock</string>
-    <string name="no_network_message">The stock values are not up to date because you are not connected to internet</string>
-    <string name="label_previous_close">Previous Close</string>
-    <string name="label_open">Open</string>
-    <string name="label_boook_value">Book Value</string>
-    <string name="label_days_low">Days Low</string>
-    <string name="label_days_high">Days High</string>
-    <string name="label_fifty_day_moving_avg">Fifty Day Moving Avg</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_change_units" translatable="true">Change Units</string>
+    <string name="symbol_search" translatable="false">Symbol Search</string>
+    <string name="content_test" translatable="false">Search for a Stock Symbol</string>
+    <string name="input_hint" translatable="true">FB</string>
+    <string name="input_prefill" translatable="true"></string>
+    <string name="widget_title" translatable="true">Today\'s Market</string>
+    <string name="network_toast" translatable="true">Uh-oh! This app requires an internet connection</string>
+    <string name="add_stock" translatable="true">Add a stock</string>
+    <string name="label_previous_close" translatable="false">Previous Close</string>
+    <string name="label_open" translatable="false">Open</string>
+    <string name="label_boook_value" translatable="false">Book Value</string>
+    <string name="label_days_low" translatable="false">Days Low</string>
+    <string name="label_days_high" translatable="true">Days High</string>
+    <string name="label_fifty_day_moving_avg" translatable="false">Fifty Day Moving Avg</string>
     <string name="label_two_huindred_day" translatable="false">Two Hundred Day Moving Avg</string>
-    <string name="label_last_trade_price">Last Trade Price</string>
-    <string name="label_no_data">You need to provide data for the chart</string>
+    <string name="label_last_trade_price" translatable="false" >Last Trade Price</string>
+    <string name="label_no_data" translatable="true">You need to provide data for the chart</string>
 
 </resources>
